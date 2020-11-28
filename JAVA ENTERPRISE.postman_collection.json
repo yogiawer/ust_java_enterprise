@@ -1,0 +1,256 @@
+{
+	"info": {
+		"_postman_id": "7cc3a15d-aeb1-4264-ac84-74728244e9c3",
+		"name": "JAVA ENTERPRISE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categories"
+					]
+				},
+				"description": "Method GET\r\nhttp://localhost:8080/categories"
+			},
+			"response": []
+		},
+		{
+			"name": "get single category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/categories/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categories",
+						"4"
+					]
+				},
+				"description": "Method GET\r\nhttp://localhost:8080/categories/3"
+			},
+			"response": []
+		},
+		{
+			"name": "insert category",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Matematika\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categories"
+					]
+				},
+				"description": "method POST\nhttp://localhost:8080/categories"
+			},
+			"response": []
+		},
+		{
+			"name": "update category",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Matematika\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/categories/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categories",
+						"4"
+					]
+				},
+				"description": "method PUT\nhttp://localhost:8080/categories/5"
+			},
+			"response": []
+		},
+		{
+			"name": "delete category",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8080/categories/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categories",
+						"5"
+					]
+				},
+				"description": "method DELETE\nhttp://localhost:8080/categories/5"
+			},
+			"response": []
+		},
+		{
+			"name": "insert book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"category_id\":\"2\",\n\t\"name\":\"Formasi sastrawi Covid-19 : konstruksi pengetahuan epidemiologis sastra Indonesia\",\n\t\"pengarang\":\"penulis, Moh. Fikri Zulfikar, Djoko Saryono, Moch. Syahri\",\n\t\"penerbit\":\"CV Muara Media Pustaka\",\n\t\"isbn\":\"978-623-95245-4-8\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books"
+					]
+				},
+				"description": "method POST \nhttp://localhost:8080/books"
+			},
+			"response": []
+		},
+		{
+			"name": "get all book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books"
+					]
+				},
+				"description": "Method GET\nhttp://localhost:8080/books"
+			},
+			"response": []
+		},
+		{
+			"name": "get single book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/books/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books",
+						"2"
+					]
+				},
+				"description": "Method GET\r\nhttp://localhost:8080/books/15"
+			},
+			"response": []
+		},
+		{
+			"name": "update book",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"category_id\":\"2\",\r\n\t\"name\":\"Media pembelajaran sastra : berbasis kearifan loka 8 etnis Sumut\",\r\n\t\"pengarang\":\"penulis, M. Surip...[et al.]\",\r\n\t\"penerbit\":\"FBS Unimed Press\",\r\n\t\"isbn\":\"978-623-93979-9-9\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/books/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books",
+						"3"
+					]
+				},
+				"description": "Method PUT\r\nhttp://localhost:8080/books/15"
+			},
+			"response": []
+		},
+		{
+			"name": "delete book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/books/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books",
+						"3"
+					]
+				},
+				"description": "Method DELETE\r\nhttp://localhost:8080/books/15"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
